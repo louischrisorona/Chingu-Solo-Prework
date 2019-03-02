@@ -39,6 +39,6 @@ app.get("*", function(req, res){
 
 
 //-- START SERVER ON PORT --//
-app.listen(3000, function(){
+app.listen(process.ENV.PORT, function(){
 	console.log("Server is running...");
 })
