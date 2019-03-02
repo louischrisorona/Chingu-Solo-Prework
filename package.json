@@ -1,0 +1,19 @@
+{
+  "name": "chingu-solo-prework",
+  "version": "1.0.0",
+  "description": "Book Finder SPA",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Louis Christopher Orona",
+  "license": "ISC"
+}

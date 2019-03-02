@@ -1,0 +1,42 @@
+<% include partials/header %>
+
+	<section>
+		<section class="card-container">
+		<% if(data.items) { %> 
+			<% data.items.forEach((book, index) => { %>
+				<article class="card" id="book<%= index %>">
+					<section class="card-bg">
+						<div class="card-content">
+							<% if(book.volumeInfo.imageLinks) { %>
+								<figure>
+								<img class="fig-img" src="<%= book.volumeInfo.imageLinks.smallThumbnail %>" alt="<%= book.volumeInfo.title %> Cover art">
+								</figure>
+							<% } else { %>
+								<img class="no-img" src="../book.png" alt="cover art not found">
+							<% } %>
+							<header>
+								<h4 class="titles"><%= book.volumeInfo.title %></h4>
+								<h5 class="authors">by <%= book.volumeInfo.authors %></h5>
+								<% if(book.volumeInfo.publisher) { %>
+									<h5 class="publishers"><%= book.volumeInfo.publisher %></h5>
+								<% } else { %>
+									<h5 class="publishers"></h5>
+								<% } %>
+							</header>					
+							<a href="<%= book.volumeInfo.infoLink %>"><img src="https://google-developers.appspot.com/books/images/gbs_preview_button1.gif" style="border:0; margin:3px;"></a>
+						</div>
+					</section>
+				</article>
+			<% }) %>
+		<% } else { %>
+			<article class="no-card">
+				<section class="no-card-bg">
+					<div class="no-card-content">
+						<h3>No books were found matching your criteria.</h3>			
+					</div>
+				</section>
+			</article>
+		<% } %>
+		</section>
+	</section>
+<% include partials/footer %>

@@ -1,0 +1,99 @@
+body {
+	background: lightgray;
+	color: black;
+	font-family: Roboto Helvetica;
+	display: grid;
+}
+
+footer {
+	position: fixed;
+	bottom: 0px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 4rem;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+h6 {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+figure {
+	display: grid;
+}
+
+#searchSubmit {
+	display: inline-grid;
+	font-size: 2rem;
+	cursor: default;
+	color: green;
+	border: -5px solid gray;
+	padding: 0.2rem;
+	border-radius: 0.2rem;
+}
+
+#searchSubmit:hover {
+	background-color: black;
+	color: white;
+}
+
+#searchForm {
+	display: grid;
+	justify-content: center;
+	background-color: lightgray;
+}
+
+#search {
+	font-size: 2rem;
+	border-radius: 3px;
+}
+
+#search:focus {
+	box-shadow: inset 0px 0px 10px #000;
+}
+
+#search:valid{
+	box-shadow: 1px 1px 2px green,
+				-1px -1px 2px green;
+}
+
+.card-container {
+	display: grid;
+	padding: 1rem;
+	height: auto-fit;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-template-rows: auto-fill;
+	grid-auto-flow: dense;
+	grid-gap: 1rem;
+}
+
+.card-bg {
+	box-shadow: 1px 1px,
+				-1px -1px;
+	border: 1px solid darkgray;
+	background-color: white;
+}
+
+.no-card-content {
+	display: grid;
+	justify-content: center;
+	font-size: 4rem;
+}
+
+.card-content {
+	display: grid;
+	justify-content: start;
+	padding: 1rem;
+}
