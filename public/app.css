@@ -6,9 +6,9 @@ body {
 }
 
 footer {
-	position: fixed;
+	display: grid;
+	justify-content: center;
 	bottom: 0px;
-	margin: 0 auto;
 }
 
 h1 {
