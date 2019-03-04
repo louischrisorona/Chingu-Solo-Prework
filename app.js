@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const request = require('request');
 const app = express();
+const PORT = process.env.PORT;
 
 const apiKey = "&key=AIzaSyBaXPEoXTEDfMOhdTrGIJ-wugttkqSpEYg";
 
@@ -39,6 +40,6 @@ app.get("*", function(req, res){
 
 
 //-- START SERVER ON PORT --//
-app.listen(process.ENV.PORT, function(){
+app.listen(PORT, function(){
 	console.log("Server is running...");
 })
