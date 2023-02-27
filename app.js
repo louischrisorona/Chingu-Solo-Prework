@@ -33,7 +33,7 @@ app.get("/search", function(req, res){
 		res.redirect("/");
 	}
 })
-
+// updating file for deploy
 app.get("*", function(req, res){
 	res.render("error");
 });
