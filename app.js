@@ -33,7 +33,8 @@ app.get("/search", function(req, res){
 		res.redirect("/");
 	}
 })
-// updating file for deploy
+// updating file for deploy 
+// need empty commit to upgrade to Heroku - 22
 app.get("*", function(req, res){
 	res.render("error");
 });
